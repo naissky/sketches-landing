@@ -1,0 +1,33 @@
+---
+import '@fontsource-variable/josefin-sans'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Sketch Demo Page | Enjoy the sensation of drawing on paper. </title>
+	</head>
+	<body>
+		<Header/>
+		<slot />
+		<Footer/>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		font-family: 'Josefin Sans Variable', system-ui;
+		background: #f3c6c9;
+		width: 100%;
+		min-height: 100vh;
+		list-style: none;
+		scroll-behavior: smooth;
+	}
+</style>

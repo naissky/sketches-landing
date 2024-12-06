@@ -1,0 +1,54 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section id="tools" class="w-full bg-[#a4cf80]">
+  <section
+    id="tools"
+    class="w-full max-w-screen-xl grid grid-cols-6 auto-rows-[20rem] gap-4 mx-auto p-20"
+  >
+    <BentoItem
+      class="col-span-6 md:col-span-3 row-span-2"
+      title="Stroke Preview"
+    >
+      <div
+        slot="image"
+        class="z-0 absolute left-0 top-0 bottom-0 w-full
+                group-hover:scale-110 transition-scale duration-500 ease-in-out opacity-100 hover:opacity-10
+                bg-center bg-cover bg-no-repeat bg-fuchsia-800"
+        style="background-image: url('/dino.webp')"
+      >
+      </div>
+      <p slot="content" class="hover:z-50">
+        Each tool is associated with its preview.
+      </p>
+    </BentoItem>
+    <BentoItem class="col-span-6 md:col-span-3" title="Wet Watercolor">
+      <div
+        slot="image"
+        class="z-0 absolute left-0 top-0 bottom-0 w-full
+                group-hover:scale-110 transition-scale duration-500 ease-in-out opacity-100 hover:opacity-10
+                bg-center bg-cover bg-no-repeat bg-fuchsia-800"
+        style="background-image: url('/watercolor.webp')"
+      >
+      </div>
+      <p slot="content" class="hover:z-50">
+        A incredibly realistic watercolor brush. Colors flow and blend together,
+        creating stunning effects.
+      </p>
+    </BentoItem>
+    <BentoItem class="col-span-6 md:col-span-3" title="Color Mix">
+      <div
+        slot="image"
+        class="z-0 absolute left-0 top-0 bottom-0 w-full
+                group-hover:scale-110 transition-scale duration-500 ease-in-out opacity-100 hover:opacity-10
+                bg-center bg-cover bg-no-repeat bg-fuchsia-800"
+        style="background-image: url('/gat.webp')"
+      >
+      </div>
+      <p slot="content" class="hover:z-50">
+        Blend between 2 colors and select the perfect shade.
+      </p>
+    </BentoItem>
+  </section>
+</section>
