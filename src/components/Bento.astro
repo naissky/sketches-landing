@@ -5,10 +5,10 @@ import BentoItem from "./BentoItem.astro";
 <section id="tools" class="w-full bg-[#a4cf80]">
   <section
     id="tools"
-    class="w-full max-w-screen-xl grid grid-cols-6 auto-rows-[20rem] gap-4 mx-auto p-20"
+    class="w-full grid grid-cols-6 auto-rows-[20rem] gap-4 mx-auto p-20"
   >
     <BentoItem
-      class="col-span-6 md:col-span-3 row-span-2"
+      class="col-span-6 md:col-span-3 md:row-span-2"
       title="Stroke Preview"
     >
       <div
@@ -19,7 +19,7 @@ import BentoItem from "./BentoItem.astro";
         style="background-image: url('/dino.webp')"
       >
       </div>
-      <p slot="content" class="hover:z-50">
+      <p slot="content" class="text-base hover:z-50">
         Each tool is associated with its preview.
       </p>
     </BentoItem>
@@ -32,7 +32,7 @@ import BentoItem from "./BentoItem.astro";
         style="background-image: url('/watercolor.webp')"
       >
       </div>
-      <p slot="content" class="hover:z-50">
+      <p slot="content" class="text-base hover:z-50">
         A incredibly realistic watercolor brush. Colors flow and blend together,
         creating stunning effects.
       </p>
@@ -46,7 +46,7 @@ import BentoItem from "./BentoItem.astro";
         style="background-image: url('/gat.webp')"
       >
       </div>
-      <p slot="content" class="hover:z-50">
+      <p slot="content" class="text-base hover:z-50">
         Blend between 2 colors and select the perfect shade.
       </p>
     </BentoItem>
